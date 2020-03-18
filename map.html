@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      /* Set the size of the div element that contains the map */
+    </style>
+</head>
+<body>
+<h3>Make It Happen!</h3>
+<!--The div element for the map -->
+<div id="map" style="height: 800px; width: 100%;"></div>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var alhambra = {lat: 55.860218, lng: -4.2612817};
+  // The map, centered at alhambra
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: alhambra});
+  // The marker, positioned at alhambra
+  var jpmorgan = new google.maps.Marker({position: alhambra, map: map, title: 'JPMorgan'});
+
+    var Cardross_Primary = new google.maps.Marker({position: {lat: 55.9681, lng: -4.656326}, map: map, title: 'Cardross Primary'});
+    var All_Saints_Primary = new google.maps.Marker({position: {lat: 55.858444, lng: -3.980286}, map: map, title: 'All Saints Primary'});
+    var Burnside_Primary = new google.maps.Marker({position: {lat: 55.816229, lng: -4.20588}, map: map, title: 'Burnside Primary'});
+    var Condorrat_Primary = new google.maps.Marker({position: {lat: 55.936799, lng: -4.021488}, map: map, title: 'Condorrat Primary'});
+    var Millersneuk = new google.maps.Marker({position: {lat: 55.919193, lng: -4.147387}, map: map, title: 'Millersneuk'});
+    var Milngavie_Primary = new google.maps.Marker({position: {lat: 55.942712, lng: -4.316022}, map: map, title: 'Milngavie Primary'});
+    var Torrance_Primary = new google.maps.Marker({position: {lat: 55.94107, lng: -4.212251}, map: map, title: 'Torrance Primary'});
+    var Canberra = new google.maps.Marker({position: {lat: 55.756898, lng: -4.203896}, map: map, title: 'Canberra'});
+    var Busby_Primary = new google.maps.Marker({position: {lat: 55.781387, lng: -4.269167}, map: map, title: 'Busby Primary'});
+    var Carolside_Primary = new google.maps.Marker({position: {lat: 55.782064, lng: -4.280625}, map: map, title: 'Carolside Primary'});
+    var Crookfur_Primary = new google.maps.Marker({position: {lat: 55.785703, lng: -4.331195}, map: map, title: 'Crookfur Primary'});
+    var Eaglesham_Primary = new google.maps.Marker({position: {lat: 55.737598, lng: -4.268727}, map: map, title: 'Eaglesham Primary'});
+    var Giffnock_Primary = new google.maps.Marker({position: {lat: 55.802729, lng: -4.29353}, map: map, title: 'Giffnock Primary'});
+    var Kirkhill_Primary = new google.maps.Marker({position: {lat: 55.775454, lng: -4.302579}, map: map, title: 'Kirkhill Primary'});
+    var Mearns_Primary = new google.maps.Marker({position: {lat: 55.769424, lng: -4.344793}, map: map, title: 'Mearns Primary'});
+    var OLM_Our_Lady_of_the_Missions = new google.maps.Marker({position: {lat: 55.802349, lng: -4.307119}, map: map, title: 'OLM Our Lady of the Missions'});
+    var Saint_Cadocs = new google.maps.Marker({position: {lat: 55.778307, lng: -4.341324}, map: map, title: 'Saint Cadocs'});
+    var Saint_Clares = new google.maps.Marker({position: {lat: 55.767571, lng: -4.317866}, map: map, title: 'Saint Clares'});
+    var Saint_Josephs = new google.maps.Marker({position: {lat: 55.779831, lng: -4.275057}, map: map, title: 'Saint Josephs'});
+    var Saint_Marks = new google.maps.Marker({position: {lat: 55.793221, lng: -4.387431}, map: map, title: 'Saint Marks'});
+    var Alexandra_Parade = new google.maps.Marker({position: {lat: 55.863068, lng: -4.215788}, map: map, title: 'Alexandra Parade'});
+    var Anderston_Primary = new google.maps.Marker({position: {lat: 55.861385, lng: -4.276645}, map: map, title: 'Anderston Primary'});
+    var Hollybrook_Secondary = new google.maps.Marker({position: {lat: 55.836988, lng: -4.253289}, map: map, title: 'Hollybrook Secondary'});
+    var Mosspark_Primary = new google.maps.Marker({position: {lat: 55.839349, lng: -4.328206}, map: map, title: 'Mosspark Primary'});
+    var Our_Lady_of_the_Annunciation = new google.maps.Marker({position: {lat: 55.815608, lng: -4.274719}, map: map, title: 'Our Lady of the Annunciation'});
+    var Saint_Bartholomews = new google.maps.Marker({position: {lat: 55.810942, lng: -4.226456}, map: map, title: 'Saint Bartholomews'});
+    var Saint_Bridgets = new google.maps.Marker({position: {lat: 55.747864, lng: -4.693507}, map: map, title: 'Saint Bridgets'});
+    var Saint_Mirins = new google.maps.Marker({position: {lat: 55.816407, lng: -4.247869}, map: map, title: 'Saint Mirins'});
+    var Shawlands_Primary = new google.maps.Marker({position: {lat: 55.829394, lng: -4.28544}, map: map, title: 'Shawlands Primary'});
+    var Wallacewell_Primary = new google.maps.Marker({position: {lat: 55.894054, lng: -4.196858}, map: map, title: 'Wallacewell Primary'});
+    var Annette_Street_Primary = new google.maps.Marker({position: {lat: 55.836489, lng: -4.260431}, map: map, title: 'Annette Street Primary'});
+    var Cuthbertson_Primary = new google.maps.Marker({position: {lat: 55.839708, lng: -4.264932}, map: map, title: 'Cuthbertson Primary'});
+    var Inverkip_Primary = new google.maps.Marker({position: {lat: 55.907803, lng: -4.870231}, map: map, title: 'Inverkip Primary'});
+    var Annanhill = new google.maps.Marker({position: {lat: 55.607489, lng: -4.51311}, map: map, title: 'Annanhill'});
+    var Gargieston = new google.maps.Marker({position: {lat: 55.602327, lng: -4.515875}, map: map, title: 'Gargieston'});
+    var Onthank = new google.maps.Marker({position: {lat: 55.630043, lng: -4.495326}, map: map, title: 'Onthank'});
+    var Knowetop_Primary = new google.maps.Marker({position: {lat: 55.780906, lng: -3.978785}, map: map, title: 'Knowetop Primary'});
+    var Lochfield_Primary = new google.maps.Marker({position: {lat: 55.828851, lng: -4.41585}, map: map, title: 'Lochfield Primary'});
+    var Kingcase_Primary = new google.maps.Marker({position: {lat: 55.486963, lng: -4.612644}, map: map, title: 'Kingcase Primary'});
+    var Newton_Farm_Primary = new google.maps.Marker({position: {lat: 55.827516, lng: -4.128922}, map: map, title: 'Newton Farm Primary'});
+    var Borestone_Primary_School = new google.maps.Marker({position: {lat: 56.096354, lng: -3.942319}, map: map, title: 'Borestone Primary School'});
+    var Saint_Ninians_Primary_School = new google.maps.Marker({position: {lat: 56.103103, lng: -3.94118}, map: map, title: 'Saint Ninians Primary School'});
+    var Saint_Marys = new google.maps.Marker({position: {lat: 55.924194, lng: -4.417187}, map: map, title: 'Saint Marys'});
+
+}
+    </script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbuPTkr-_26Mxb2oySHxhch605465CefY&callback=initMap">
+</script>
+</body>
+</html>
+
+
